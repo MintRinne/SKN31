@@ -12,8 +12,11 @@ def mutiply(num1, num2):
 def divid(num1, num2):
     return num1 / num2
 
-result = minus(10,5) #함수 호출 -> 기본 : 같은 모듈에 정의된 함수를 호출
-print(result)
+# 실행코드 -> main모듈로 실행될 때만 실행되도록 처리
 
+#print(__name__) #결과 __main__
+if __name__ == '__main__':
+    result = minus(10,5) #함수 호출 -> 기본 : 같은 모듈에 정의된 함수를 호출
+    print(result)
 
 # python calc.py 
